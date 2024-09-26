@@ -34,7 +34,7 @@ function adicionar() {
         
         res.innerHTML = ``; // Limpa a área de resultados caso já tenha algum texto anterior
     } else {
-        window.alert(`Valor inválido ou já encontrado na lista.`); // Exibe um alerta se o valor for inválido ou duplicado
+        window.alert(`Valor inválido ou já encontrado na lista.`); 
     }
     
     num.value = ``; // Limpa o campo de input para permitir a inserção de outro número
@@ -44,7 +44,7 @@ function adicionar() {
 // Função que calcula e exibe os resultados após a finalização da adição dos números
 function finalizar() {
     if (valores.length == 0) { // Verifica se a lista de valores está vazia
-        window.alert(`Adicione um valor antes de finalizar!`); // Alerta para adicionar números antes de finalizar
+        window.alert(`Adicione um valor antes de finalizar!`); 
     } else {
         let tot = valores.length; // Total de números adicionados
         let maior = valores[0]; // Inicializa o maior valor como o primeiro número da lista
@@ -63,14 +63,13 @@ function finalizar() {
                 menor = valores[pos]; // Atualiza o menor valor
         }
         
-        media = soma / tot; // Calcula a média dos números
-        
+        media = soma / tot;
         // Exibe os resultados na div 'res'
         res.innerHTML = ``; // Limpa o conteúdo anterior da área de resultado
-        res.innerHTML += `<p>Ao todo temos ${tot} cadastrados.</p>`; // Exibe o total de números adicionados
-        res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`; // Exibe o menor número
-        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`; // Exibe o maior número
-        res.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`; // Exibe a soma dos números
-        res.innerHTML += `<p>A média dos valores é ${media}.</p>`; // Exibe a média dos números
+        res.innerHTML += `<p>Ao todo temos ${tot} cadastrados.</p>`; 
+        res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`; 
+        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`; 
+        res.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`; 
+        res.innerHTML += `<p>A média dos valores é ${media}.</p>`;
     }
 }
