@@ -82,6 +82,7 @@ footer {
 
   select#flista {
     width: 150px;
+    height: auto;
     background: #efd6ac;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -114,6 +115,7 @@ footer {
 
   select#flista {
     width: 150px;
+    height: auto;
     background: #efd6ac;
     margin-bottom: 10px;
     border-radius: 10px;
