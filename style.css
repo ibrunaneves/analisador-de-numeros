@@ -65,60 +65,61 @@ footer {
   color: #efd6ac;
 }
 
-/* Responsividade para telas menores que 768px (tamanho de celular) */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 20px; 
-        width: 300px;
-        height: auto;
-        text-align: center;
-      }
-      
-  section {
-    width: 80%; /* Ocupar 80% da tela no celular */
-    height: auto; /* Altura automática para facilitar a leitura */
-    padding: 10px; /* Ajustar o padding para ficar mais confortável a leitura */
-  }
+/* RESPONSIVIDADE */
 
-  select#flista {
-    width: 150px;
-    height: auto;
-    background: #efd6ac;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    padding: 5px;
-  }
+@media screen and (max-width: 768px) {
+    section {
+        width: 90%; /* Aumenta a largura do section para 90% da tela */
+        padding: 10px; /* Reduz o padding em telas menores */
+    }
 
-  body {
-    font-size: 16px; 
-  }
+    input[type="number"] {
+        width: 60px; /* Aumenta o campo de número para facilitar o toque em telas menores */
+        padding: 5px 10px;
+    }
+
+    select#flista {
+        width: 100%; /* O select ocupa toda a largura em telas menores */
+    }
+
+    input[type="button"] {
+        padding: 8px 10px; /* Ajusta o padding dos botões */
+        font-size: 14px; /* Reduz levemente o tamanho da fonte */
+    }
+
+    body {
+        margin-top: 50px; /* Reduz o topo para que o conteúdo não fique muito distante em telas menores */
+    }
 }
 
-/* Responsividade para telas menores que 480px (tamanho de celulares muito pequenos) */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 20px; 
-    width: 300px;
-    height: auto;
-    text-align: center;
-  }
+@media screen and (max-width: 480px) {
+    section {
+        width: 95%; /* Mais espaço para o conteúdo em telas de celulares */
+        padding: 10px; /* Reduz o padding para ocupar menos espaço */
+    }
 
-  body {
-    font-size: 15px; 
-  }
+    input[type="number"] {
+        width: 100%; /* O campo de número ocupa toda a largura disponível */
+        margin-left: 0; /* Remove o espaçamento à esquerda para centralizar o campo */
+        margin-bottom: 10px; /* Adiciona margem inferior para espaçamento */
+    }
 
-  section {
-    width: 80%; 
-    height: auto;
-    padding: 5px 10px 15px;
-  }
+    input[type="button"] {
+        width: 100%; /* Botões ocupam a largura total em celulares */
+        margin-left: 0; /* Centraliza os botões */
+        margin-top: 10px; /* Adiciona espaçamento superior */
+    }
 
-  select#flista {
-    width: 150px;
-    height: auto;
-    background: #efd6ac;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    padding: 5px;
-  }
+    select#flista {
+        width: 100%; /* Select ocupa a largura total da tela */
+        padding: 8px; /* Aumenta o padding para facilitar o uso */
+    }
+
+    h1 {
+        font-size: 18px; /* Ajusta o tamanho da fonte do título */
+    }
+
+    footer {
+        font-size: 12px; /* Reduz o tamanho da fonte no rodapé */
+    }
 }
