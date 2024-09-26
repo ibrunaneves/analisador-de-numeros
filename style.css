@@ -1,119 +1,114 @@
 header {
-  text-align: center;
-  color: #efd6ac;
-}
-
-body {
-  margin-top: 100px;
-  text-align: center;
-  background: #04151f;
-  font-family: "Chakra Petch", sans-serif;
-}
-
-section {
-  font-weight: 500;
-  text-align: center;
-  background: #432534;
-  color: #efd6ac;
-  width: 450px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 15px;
-  margin: auto;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.498);
-}
-
-select#flista {
-  width: 150px;
-  background: #efd6ac;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-input[type="button"] {
-  background-color: #c44900;
-  color: #efd6ac;
-  margin-top: 8px;
-  margin-left: 8px;
-  border: none;
-  border-radius: 10px;
-  padding: 5px 15px;
-  font-size: 15px;
-  font-family: "Chakra Petch", sans-serif;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-input[type="button"]:hover {
-  background-color: #212d40;
-  color: #d66853;
-}
-
-input[type="number"] {
-  width: 45px;
-  background-color: #efd6ac;
-  color: #14213d;
-  border: none;
-  border-radius: 10px;
-  padding: 5px 15px;
-  margin-left: 8px;
-  font-size: 15px;
-}
-
-footer {
-  color: #efd6ac;
-}
-
-/* Responsividade para telas menores que 768px (tamanho de celular) */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 20px; 
+    text-align: center;
+    color: #efd6ac;
   }
-
+  
+  body {
+    margin-top: 100px;
+    text-align: center;
+    background: #04151f;
+    font-family: "Chakra Petch", sans-serif;
+  }
+  
   section {
-    width: 90%; 
-    padding: 10px; 
+    font-weight: 500;
+    text-align: center;
+    background: #432534;
+    color: #efd6ac;
+    width: 450px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.498);
   }
-
+  
   select#flista {
     width: 150px;
-    height: 100px;
     background: #efd6ac;
+    margin-bottom: 10px;
     border-radius: 10px;
     padding: 5px;
   }
-
-  body {
-    font-size: 15px; 
+  
+  input[type="button"] {
+    background-color: #c44900;
+    color: #efd6ac;
+    margin-top: 8px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-family: "Chakra Petch", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
-}
-
-/* Responsividade para telas menores que 480px (tamanho de celulares muito pequenos) */
-@media (max-width: 480px) {
+  
+  input[type="button"]:hover {
+    background-color: #212d40;
+    color: #d66853;
+  }
+  
+  input[type="number"] {
+    width: 45px;
+    background-color: #efd6ac;
+    color: #14213d;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-left: 8px;
+    font-size: 15px;
+  }
+  
+  footer {
+    color: #efd6ac;
+  }
+  
+  /* Responsividade para telas menores que 768px (tamanho de celular) */
+  @media (max-width: 768px) {
     header h1 {
-        font-size: 15px; 
-      }
-    
-      section {
-        width: 80%; 
-        padding: 10px; 
-      }
-    
-      select#flista {
-        width: 150px;
-        height: 100px;
-        background: #efd6ac;
-        display: flexbox;
-        flex-direction: column;
-        align-items: center;
-        overflow: auto;
-        justify-content: space-between;
-        border-radius: 10px;
-        padding: 5px;
-      }
-    
-      body {
-        font-size: 15px; 
-      }
+      font-size: 20px; 
     }
+  
+    section {
+      width: 90%; 
+      padding: 10px; 
+    }
+  
+    select#flista {
+      width: 250px;
+      height: 150px;
+      background: #efd6ac;
+      border-radius: 10px;
+      padding: 5px;
+    }
+  
+    body {
+      font-size: 15px; 
+    }
+  }
+  
+  /* Responsividade para telas menores que 480px (tamanho de celulares muito pequenos) */
+  @media (max-width: 480px) {
+      header h1 {
+          font-size: 15px; 
+        }
+      
+        section {
+          width: 80%; 
+          padding: 10px; 
+        }
+      
+        select#flista {
+          width: 250px;
+          height: 150px;
+          background: #efd6ac;
+          border-radius: 10px;
+          padding: 5px;
+        }
+      
+        body {
+          font-size: 15px; 
+        }
+      }
